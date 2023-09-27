@@ -28,7 +28,7 @@ body{
     .general-framework{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 535px;
+        grid-template-rows: 1fr 540px;
         grid-template-areas: "aside" "home";
     }
     
