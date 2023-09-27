@@ -6,10 +6,12 @@ body{
 
 .aside{
     background-color: brown;
+    grid-area: aside;
 }
 
 .home{
     background-color: blue;
+    grid-area: home;
 }
 
 .general-framework{
