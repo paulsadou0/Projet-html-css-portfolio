@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather+Sans:wght@500&family=Neuton:wght@300&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
-
-body{
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Lato&family=Merriweather+Sans:wght@500&family=Mohave:wght@300&family=Neuton:wght@200&family=Old+Standard+TT&family=Sometype+Mono&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+body {
     margin: 0;
     padding: 0;
-    font-family:'Merriweather Sans',
+    font-family: 'Merriweather Sans',
+
 }
 
 /****************ASIDE*******************/
 .aside {
     grid-area: aside;
     color: black;
+    text-align: center;
+    border-left: 4px solid black;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
 }
 
 nav .image img {
@@ -20,12 +24,12 @@ nav .image img {
 }
 
 nav .image h1 {
-   margin: 0 10px;
+    margin: 0 10px;
 }
 
 nav .image p {
-    color: rgb(171, 173, 174);
-    margin: 0 0;
+    color: rgb(166, 169, 170);
+    margin: 9px;
 }
 
 nav ul {
@@ -41,7 +45,9 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    font-size: 1.2rem;
     display: grid;
+    color: black;
 }
 
 nav ul li a:hover {
@@ -60,16 +66,44 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+/*************HOME**************/
 .home {
-    background-color: blue;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/assets/images/002.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     grid-area: home;
+    border-top: 8px solid black;
+    border-right: 4px solid black;
+    border-bottom: 8px solid black;
+}
+
+.infos header h2 {
+    color: white;
+    font-size: 3rem;
+    margin-top: 14%;
+    text-align: center;
+}
+
+.infos h3 {
+    color: white;
+    opacity: 0.7;
+    margin-top: -3%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.infos header p1 {
+    position: absolute;
+    left: 54%;
+    color: white;
+    opacity: 0.7;
+    font-size: 1.2rem;
 }
 
 .general-framework {
     display: grid;
     height: 100vh;
-    text-align: center;
-    color: white;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
     grid-template-areas: "aside home";
@@ -82,27 +116,70 @@ nav ul li a:hover {
         grid-template-rows: 1fr 14fr;
         grid-template-areas: "aside" "home";
     }
-
-    img, p,ul,.icons-social i {
+    
+    .aside {
+        border-top: 8px solid black;
+        border-right: 4px solid black;
+        border-bottom: none;
+    }
+    img, ul,
+    .icons-social i {
         display: none;
     }
 
-    nav .image h1{
+    nav .image h1 {
         position: absolute;
-        left: 2%;
-        top: 2.3%; 
+        left: 3%;
+        top: 2.3%;
         font-size: 1.2rem;
         margin: -3px;
     }
 
-    .navbar::before{
+    .navbar::before {
         content: "\2630";
         position: absolute;
         left: 93%;
-        top: 1.2%;
-        font-size: 1.4rem;
+        top: 1.5%;
+        font-size: 1.2rem;
         color: black;
         font-weight: bold;
         cursor: pointer;
+    }
+
+    p {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 38%;
+        font-size: 1.2rem;
+    }
+    
+    .home {
+        border-top: none;
+        border-left: 4px solid black;
+        border-bottom: 8px solid black;
+    }
+    
+    .infos header h2 {
+        margin-top: 150px;
+        font-size: 2.5rem;
+    }
+    
+    .infos header h3 {
+        display: none;
+    }
+    .infos header p1 {
+       position: absolute;
+       top: 48%;
+       left: 25%;
+       color: white;
+    }
+     
+    .designer::before {
+        content: "Web Designer";
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: -40px;
     }
 }
