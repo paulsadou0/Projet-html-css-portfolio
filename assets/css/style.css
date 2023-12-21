@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Lato&family=Merriweather+Sans:wght@500&family=Mohave:wght@300&family=Neuton:wght@200&family=Old+Standard+TT&family=Sometype+Mono&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Merriweather Sans',
-
+    font-family:'Times New Roman', Times, serif;
 }
+
 
 /****************ASIDE*******************/
 .aside {
@@ -16,42 +16,50 @@ body {
     border-bottom: 8px solid black;
 }
 
+nav .image{
+    margin: 16px;
+}
+
 nav .image img {
     height: 80px;
     width: 80px;
-    margin: 8px 10px;
+    margin: 25px;
     border-radius: 50%;
 }
 
 nav .image h1 {
-    margin: 0 10px;
+    text-align: center;
+    margin: -18px;
 }
 
 nav .image p {
     color: rgb(166, 169, 170);
-    margin: 9px;
+    margin: 20px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 30px;
+    margin: 40px;
 }
 
 nav ul li {
     text-decoration: none;
-    margin: 22px;
+    margin: 22px 0;
+    padding: 0;
+    display: grid;
 }
 
 nav ul li a {
     text-decoration: none;
     font-size: 1.2rem;
-    display: grid;
     color: black;
+    background-color: whitesmoke;
 }
 
 nav ul li a:hover {
-    background-color: rgb(209, 212, 214);
+    background-color: gray;
+    color: white;
     cursor: pointer;
 }
 
@@ -68,37 +76,43 @@ nav ul li a:hover {
 
 /*************HOME**************/
 .home {
+    grid-area: home;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/assets/images/002.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    grid-area: home;
     border-top: 8px solid black;
     border-right: 4px solid black;
     border-bottom: 8px solid black;
+    color: white;
+    transition: 10s;
 }
 
-.infos header h2 {
-    color: white;
-    font-size: 3rem;
-    margin-top: 14%;
+
+.home .infos{
+    margin-top: 15%;
+}
+
+.home .infos h2 {
     text-align: center;
+    font-size: 3rem; 
 }
 
-.infos h3 {
-    color: white;
-    opacity: 0.7;
-    margin-top: -3%;
-    font-size: 1.2rem;
+
+.home .infos h3{
     text-align: center;
+    font-size: 1.2rem;
+    margin-top: -4%;
+}
+.home .infos p{
+    font-size: 1.3rem;
+    margin-left: 35%
 }
 
-.infos header p1 {
-    position: absolute;
-    left: 54%;
-    color: white;
-    opacity: 0.7;
-    font-size: 1.2rem;
+
+ .home .infos p u{
+text-decoration: none;
+border-bottom: 2px solid yellow;
 }
 
 .general-framework {
@@ -109,77 +123,76 @@ nav ul li a:hover {
     grid-template-areas: "aside home";
 }
 
-@media screen and (max-width: 750px) {
-    .general-framework {
+@media  screen and (max-width: 900px) {
+    .general-framework{
         display: grid;
+        width: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 14fr;
+        grid-template-rows: 1fr 12fr;
         grid-template-areas: "aside" "home";
     }
+
     
     .aside {
         border-top: 8px solid black;
         border-right: 4px solid black;
         border-bottom: none;
-    }
+    } 
+
     img, ul,
     .icons-social i {
         display: none;
     }
 
-    nav .image h1 {
-        position: absolute;
-        left: 3%;
-        top: 2.3%;
-        font-size: 1.2rem;
-        margin: -3px;
-    }
 
     .navbar::before {
         content: "\2630";
         position: absolute;
-        left: 93%;
-        top: 1.5%;
+        top: 2%;
+        right: 2%;
         font-size: 1.2rem;
         color: black;
         font-weight: bold;
         cursor: pointer;
     }
 
-    p {
-        position: absolute;
-        right: 0;
-        left: 0;
-        top: 38%;
-        font-size: 1.2rem;
+    nav .image h1 {
+       margin-left: -82%;
+       line-height: 1.5;
     }
+    
     
     .home {
         border-top: none;
         border-left: 4px solid black;
         border-bottom: 8px solid black;
     }
-    
-    .infos header h2 {
-        margin-top: 150px;
-        font-size: 2.5rem;
-    }
-    
-    .infos header h3 {
-        display: none;
-    }
-    .infos header p1 {
-       position: absolute;
-       top: 48%;
-       left: 25%;
-       color: white;
-    }
-     
-    .designer::before {
-        content: "Web Designer";
+
+    .home .infos h2{
         position: absolute;
+        font-size: 2.2rem;
+        top: 22%;
         left: 0;
         right: 0;
-        margin: -40px;
     }
-}
+
+
+     .home .infos h3 {
+        display: none;
+    }
+
+    .image p{
+        position: absolute;
+        top: 31%;
+        left: 0;
+        right: 0;
+        font-size: 1.2rem;
+    }
+
+    .home .infos p{
+        position: absolute;
+        top: 38%;
+        left: -6%;
+    } 
+
+} 
