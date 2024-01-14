@@ -10,23 +10,23 @@
     border-bottom: 8px solid black;
 }
 
-nav .image{
+nav .slider{
     margin: 16px;
 }
 
-nav .image img {
+nav .slider img {
     height: 80px;
     width: 80px;
     margin: 25px;
     border-radius: 50%;
 }
 
-nav .image h1 {
+nav .slider-nav h1 {
     text-align: center;
     margin: -18px;
 }
 
-nav .image p {
+nav .slider-nav p {
     color: rgb(166, 169, 170);
     margin: 20px;
 }
@@ -70,157 +70,133 @@ nav ul li a:hover {
 
 /*************About Me**************/
 .about-me{
-    grid-area: about-me;
     border-top: 8px solid black;
     border-right: 4px solid black;
     border-bottom: 8px solid black;
 }
 
-.about-me-about{
-    width: 100%;
-    transition: 8s;
-    animation: rotate 4s ease;
-
-}
-
- @keyframes rotate {
-    from{
-        margin-left: 100%;
-    }
-    to{
-        margin-right: 100%;
-    }
-   
- }
- 
-
-.header-title{
+.about-title{
     display: flex;
+    gap: 6px;
 }
 
-.header-title h1{
-    margin: 15px;
-    background-color: yellow;
+.about-title header{
+    height: 35px;
     width: 25%;
-    text-align: right;
+    background-color: yellow;
+    margin-top: 3%;
+}
+
+
+.about-title header h2{
+    margin-top: 1%;
+    margin-left: 46%;
     font-size: 1.5rem;
 }
 
-.header-title p{
+.about-title p{
+    margin-top: 4%;
+    margin-left: 2%;
     color: #ccc;
-    line-height: 2;
 }
 
-.web-develoepr-designer{
+.web-developer{
     display: flex;
-}
-
-.web-develoepr-designer .web-develoepr-designer-title h1{
-    font-size: 1.4rem;
-    width: 60%;
-}
-
-.web-develoepr-designer .web-develoepr-designer-title p{
-    font-size: 1rem;
-    width: 60%;
     text-align: justify;
+    gap: 60px;
 }
 
-.testimonial h1{
-    margin-left: -18%;
+.web-developer-designer{
+   width: 60%;
 }
 
+.web-developer .web-developer-designer h3{
+    font-size: 2rem;
+}
 
+.testimonial{
+    width: 30%;
+    margin: 20px;
+}
+
+.testimonial h4{
+    font-size: 2rem;
+}
+.testimonial h4 u{
+    text-decoration: none;
+    border-bottom: 2px solid yellow;
+}
 .testimonial .paragraphe{
-    margin-left: -20%;
-    width: 250px;
-    height: 150px;
-    border: 1px solid #ccc;
+    background-color: #fffdfd;
+    height: 130px;
+    border: 1px solid #dad8d8;
 }
 
 .testimonial .paragraphe p{
-    text-align: justify;
-    height: 160px;
-    margin: 40px;
-    margin-top: 6%;
+    margin: 10px;
 }
 
-.bars-testimonial{
-    display: flex;
-}
-
-.bars-testimonial img{
+.testimonial img{
     height: 80px;
-    width: 80px;
-    margin-top: -8%;
-    margin-left: 61%;
     border-radius: 50%;
-    background-color: rgb(149, 234, 234);
+    background-color: rgb(221, 228, 228);
+    margin-top: -6%;
+    margin-left: -14%;
 }
 
-.bars-testimonial p{
-    margin-top: -3%;
-    margin-left: 2%;
+.testimonial p{
+    margin-top: -20%;
+    margin-left: 22%;
 }
 
-.bars-testimonial span{
-   margin: 6px;
-   color: #ccc;
+.testimonial p span{
+    color: #ccc;
+    font-size: 0.8rem;
+    margin-left: 4%;
 }
 
-.bars-testimonial .image{
-    line-height: 1;
-    font-size: 1.2rem;
-    margin-top: -3%;
-    margin-left: 8%;
+.defile {
+    margin-top: -16%;
+    margin-left: 89%;
+    font-size: 1rem;
 }
 
-.bars-testimonial .image i{
-    background-color: #ccc;
+.defile i{
+    background-color: #e9e7e7;
 }
 
 .services{
-    justify-content: center;
-    margin-top: -6%;
-    margin-left: 10%;
+    margin-top: -30px;
 }
 
-.services .services-line{
-    margin-left: -10%;
-    
+.services h5{
+    font-size: 1.5rem;
 }
 
-.services .services-line img{
-    height: 50px;
-    margin: 55px;
-    margin-top: 15px;
-    margin-left: 10%;
+.services h5 u{
+    text-decoration: none;
+    border-bottom: 2px solid yellow;
 }
-
-.services-title{
+.services-line{
     display: flex;
-}
-
-.services-title h3{
     text-align: center;
-    margin-top: -4%;
-    margin-left: 10%;
+    margin: 12px;
 }
 
-.services-paragraphe{
-    display: flex;
+.services-line .services-line-item img{
+    height: 50px;
 }
 
-.services-paragraphe p{
-    width: 15%;
+.services-line-item h6{
+    font-size: 1rem;
+    margin: 6px;
+}
+
+.services-line-item p{
+    width: 60%;
     text-align: justify;
-    margin: 15px;
-    margin-top: -1%;
-    margin-left: 6%;
+    margin-left: 25%;
 }
-
-
-
 .general-framework {
     display: grid;
     height: 100vh;
@@ -229,12 +205,13 @@ nav ul li a:hover {
     grid-template-areas: "aside about-me";
 }
 
+
 @media  screen and (max-width: 750px) {
     .general-framework{
         display: grid;
-        width: 100%;
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 12fr;
+        grid-template-rows: 1fr;
         grid-template-areas: "aside" "about-me";
     }
 
@@ -242,11 +219,10 @@ nav ul li a:hover {
     .aside {
         border-right: 4px solid black;
         border-bottom: none;
-        box-shadow: 1px 2px 4px rgb(234, 232, 232);
     } 
 
-    img, ul,
-    .icons-social i {
+
+    .slider img, ul, .icons-social i{
         display: none;
     }
 
@@ -262,19 +238,27 @@ nav ul li a:hover {
         cursor: pointer;
     }
 
-    nav .image h1 {
-       margin-left: -82%;
-       line-height: 1.5;
+
+    nav .slider h2 {
+       margin-left: -75%;
+       margin-top: -3%;
+
     }
     
 
-    .image p{
+    .slider p{
         display: none;
     }
 
     .about-me{
         border-top: none;
         border-left: 4px solid black;
+
     }
 
+
+
 } 
+
+
+

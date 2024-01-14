@@ -16,25 +16,25 @@ body {
     border-bottom: 8px solid black;
 }
 
-nav .image{
+nav .slider-nav{
     margin: 16px;
 }
 
-nav .image img {
+nav .slider-nav img {
     height: 80px;
     width: 80px;
     margin: 25px;
     border-radius: 50%;
 }
 
-nav .image h1 {
+nav .slider-nav h1 {
     text-align: center;
     margin: -18px;
 }
 
-nav .image p {
+nav .slider-nav p {
     color: rgb(166, 169, 170);
-    margin: 20px;
+    margin: 25px;
 }
 
 nav ul {
@@ -139,10 +139,11 @@ border-bottom: 2px solid yellow;
         border-bottom: none;
     } 
 
-    img, ul,
+    .slider-nav img, ul,
     .icons-social i {
         display: none;
     }
+
 
 
     .navbar::before {
@@ -156,11 +157,17 @@ border-bottom: 2px solid yellow;
         cursor: pointer;
     }
 
-    nav .image h1 {
-       margin-left: -82%;
-       line-height: 1.5;
+    nav .slider-nav h1 {
+        margin-left: -82%;
+        line-height: 1.5;
     }
     
+    nav .slider-nav p{
+        position: absolute;
+        top: 32%;
+        left: 0;
+        right: 0;
+    }
     
     .home {
         border-top: none;
