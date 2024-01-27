@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family:'Times New Roman', Times, serif;
+    height: 100vh;
 }
 
 
@@ -11,9 +12,9 @@ body {
     grid-area: aside;
     color: black;
     text-align: center;
-    border-left: 4px solid black;
-    border-top: 8px solid black;
-    border-bottom: 8px solid black;
+    border-left: 6px solid black;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
 }
 
 nav .slider-nav{
@@ -81,11 +82,10 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-top: 8px solid black;
-    border-right: 4px solid black;
-    border-bottom: 8px solid black;
+    border-top: 10px solid black;
+    border-right: 6px solid black;
+    border-bottom: 10px solid black;
     color: white;
-    transition: 10s;
 }
 
 
@@ -134,8 +134,8 @@ border-bottom: 2px solid yellow;
 
     
     .aside {
-        border-top: 8px solid black;
-        border-right: 4px solid black;
+        border-top: 10px solid black;
+        border-right: 6px solid black;
         border-bottom: none;
     } 
 
@@ -171,8 +171,8 @@ border-bottom: 2px solid yellow;
     
     .home {
         border-top: none;
-        border-left: 4px solid black;
-        border-bottom: 8px solid black;
+        border-left: 6px solid black;
+        border-bottom: 10px solid black;
     }
 
     .home .infos h2{

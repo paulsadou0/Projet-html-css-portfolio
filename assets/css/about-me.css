@@ -1,41 +1,55 @@
-
+/************CONTAINER***************/
+.container{
+    padding: 5px;
+}
 
 /****************ASIDE*******************/
+
 .aside {
     grid-area: aside;
     color: black;
     text-align: center;
-    border-top: 8px solid black;
-    border-left: 4px solid black;
-    border-bottom: 8px solid black;
+    border-top: 10px solid black;
+    border-left: 6px solid black;
+    border-bottom: 10px solid black;
 }
 
-nav .slider{
+/****************SLIDER-NAV*******************/
+nav .slider-nav{
     margin: 16px;
 }
 
-nav .slider img {
+/****************SLIDER-NAV IMG*******************/
+
+nav .slider-nav img {
     height: 80px;
     width: 80px;
     margin: 25px;
     border-radius: 50%;
 }
 
+/****************SLIDER-NAV H1*******************/
+
 nav .slider-nav h1 {
     text-align: center;
     margin: -18px;
 }
+
+/****************SLIDER-NAV P*******************/
 
 nav .slider-nav p {
     color: rgb(166, 169, 170);
     margin: 20px;
 }
 
+/**************NAV UL**************************/
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 40px;
 }
+
+/**************NAV UL LI**************************/
 
 nav ul li {
     text-decoration: none;
@@ -44,6 +58,7 @@ nav ul li {
     display: grid;
 }
 
+/**************NAV UL LI a**************************/
 nav ul li a {
     text-decoration: none;
     font-size: 1.2rem;
@@ -51,11 +66,15 @@ nav ul li a {
     background-color: whitesmoke;
 }
 
+/**************NAV UL LI a:hover**************************/
+
 nav ul li a:hover {
     background-color: gray;
     color: white;
     cursor: pointer;
 }
+
+/**************ICONS-SOCIAL i**************************/
 
 .icons-social i {
     width: 24px;
@@ -68,17 +87,24 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/*************About Me**************/
+
+/*************ABOUT ME**************/
+
 .about-me{
-    border-top: 8px solid black;
-    border-right: 4px solid black;
-    border-bottom: 8px solid black;
+    border-top: 10px solid black;
+    border-right: 6px solid black;
+    border-bottom: 10px solid black;
 }
 
+
+
+/*************ABOUT-TITLE**************/
 .about-title{
     display: flex;
-    gap: 6px;
+    /* gap: 6px; */
 }
+
+/*************ABOUT-TITLE HEADER**************/
 
 .about-title header{
     height: 35px;
@@ -87,6 +113,7 @@ nav ul li a:hover {
     margin-top: 3%;
 }
 
+/*************ABOUT-TITLE HEADER h2**************/
 
 .about-title header h2{
     margin-top: 1%;
@@ -94,47 +121,56 @@ nav ul li a:hover {
     font-size: 1.5rem;
 }
 
+/*************ABOUT-TITLE HEADER p**************/
+
 .about-title p{
     margin-top: 4%;
     margin-left: 2%;
     color: #ccc;
 }
 
-.web-developer{
-    display: flex;
+/*************WEB-DEVELOPER-DESIGNER**************/
+
+.web-developer .web-developer-designer{
     text-align: justify;
-    gap: 60px;
+    width: 60%;
 }
 
-.web-developer-designer{
-   width: 60%;
-}
+/*************WEB-DEVELOPER-DESIGNER**************/
 
 .web-developer .web-developer-designer h3{
     font-size: 2rem;
 }
 
+/*************TESTIMONIAL**************/
+
 .testimonial{
     width: 30%;
-    margin: 20px;
 }
 
+/*************TESTIMONIAL h4**************/
+
 .testimonial h4{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
-.testimonial h4 u{
-    text-decoration: none;
-    border-bottom: 2px solid yellow;
-}
+
+
+/*************TESTIMONIAL PARAGRAPHE**************/
+
 .testimonial .paragraphe{
-    background-color: #fffdfd;
+    background-color: #faf9f9db;
     height: 130px;
     border: 1px solid #dad8d8;
+    padding: 12px;
 }
+
+/*************TESTIMONIAL PARAGRAPHE P**************/
 
 .testimonial .paragraphe p{
     margin: 10px;
 }
+
+/*************TESTIMONIAL IMG**************/
 
 .testimonial img{
     height: 80px;
@@ -144,59 +180,80 @@ nav ul li a:hover {
     margin-left: -14%;
 }
 
+/*************TESTIMONIAL P**************/
+
 .testimonial p{
     margin-top: -20%;
     margin-left: 22%;
 }
 
+/*************TESTIMONIAL P SPAN**************/
+
 .testimonial p span{
     color: #ccc;
     font-size: 0.8rem;
     margin-left: 4%;
+    font-style: italic;
 }
 
+/*************DEFILE**************/
 .defile {
     margin-top: -16%;
     margin-left: 89%;
     font-size: 1rem;
 }
 
+/*************DEFILE i**************/
+
 .defile i{
     background-color: #e9e7e7;
 }
+
+/*************SERVICES**************/
 
 .services{
     margin-top: -30px;
 }
 
+/*************SERVICES h5**************/
 .services h5{
     font-size: 1.5rem;
 }
 
+/*************SERVICES h5 u**************/
 .services h5 u{
     text-decoration: none;
     border-bottom: 2px solid yellow;
 }
+
+/*************SERVICES-LINE**************/
 .services-line{
     display: flex;
     text-align: center;
-    margin: 12px;
+    margin: 4px;
 }
+
+/*************SERVICES-LINE-ITEM IMG**************/
 
 .services-line .services-line-item img{
     height: 50px;
 }
 
+/*************SERVICES-LINE-ITEM h6**************/
 .services-line-item h6{
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 6px;
 }
 
+/*************SERVICES-LINE-ITEM P**************/
 .services-line-item p{
     width: 60%;
-    text-align: justify;
+    /* text-align: justify; */
     margin-left: 25%;
+    text-align: justify;
 }
+
+/*************GENERAL-FRAMEWORK**************/
 .general-framework {
     display: grid;
     height: 100vh;
@@ -206,13 +263,23 @@ nav ul li a:hover {
 }
 
 
-@media  screen and (max-width: 750px) {
+/*************MEDIA QUERY**************/
+
+@media  screen and (max-width: 901px) {
     .general-framework{
-        display: grid;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "aside" "about-me";
+    }
+
+    /*************NAV**************/
+    nav{
+        box-shadow: 0 4px 6px #ccc;
+    }
+
+    nav .slider-nav h1 {
+        text-wrap: nowrap;
     }
 
 
@@ -222,7 +289,7 @@ nav ul li a:hover {
     } 
 
 
-    .slider img, ul, .icons-social i{
+    .slider img, ul, .slider-nav p, .icons-social i{
         display: none;
     }
 
@@ -239,26 +306,140 @@ nav ul li a:hover {
     }
 
 
-    nav .slider h2 {
-       margin-left: -75%;
+    nav .slider-nav h1{
        margin-top: -3%;
-
+       margin-right: 70%;
     }
     
-
-    .slider p{
-        display: none;
-    }
 
     .about-me{
         border-top: none;
         border-left: 4px solid black;
+    }
+ 
+    
+} 
 
+@media screen and (max-width: 650px) {
+    .about-title header{
+        width: 150px;
+        height: 30px;
+        line-height: 1.5;
+    }
+
+    .about-title header h2{
+        text-wrap: nowrap;
+        font-size: 1.2rem;
+        margin-left: 55px;
     }
 
 
+    .about-title p{
+      display: none;
+    }
 
-} 
+
+    .web-developer{
+        display: block;
+        margin: 10px;
+    }
 
 
+    .web-developer .web-developer-designer{
+        width: 100%;
+    }
 
+
+    .web-developer .web-developer-designer h3{
+        font-size: 1.2rem;
+    }
+
+
+    .web-developer .web-developer-designer p{
+        margin-top: -3%;
+    }
+
+
+    .testimonial{
+        width: 100%;
+        margin-top: -6%;
+    }
+
+    
+    .testimonial h4{
+        margin-top: 8%;
+        margin-left: -5%;
+        font-size: 1.2rem;
+    }
+
+    
+    .testimonial .paragraphe{
+        width: 80%; 
+        margin: 0 auto;
+        padding: -20px;
+        margin-top: -2%;
+    }
+
+    
+    .testimonial img{
+        margin-left: -15px;
+    }
+
+
+    .testimonial p{
+        margin-top: -12%;
+    }
+
+
+    .testimonial p s{
+        font-size: 1em;
+    }
+
+
+    .defile {
+        margin-top: -10%;
+        margin-left: 86%;
+        font-size: 1rem;
+    }
+
+
+  .services{
+      padding: 10px;
+    }
+
+
+    .services-line{
+        display: block;
+        height: 20px;
+    }
+
+
+    .services-line-item img {
+        margin: -18px;
+    }
+
+
+    .services-line-item:nth-child(2){
+        display: none;
+    }
+    
+
+    .services-line-item:nth-child(3){
+        display: none;
+    }
+    
+
+    .services-line-item:nth-child(4){
+        display: none;
+    }
+    
+
+    .services-line-item h6{ 
+        display: none;
+    }
+    
+
+    .services-line-item p{ 
+        display: none;
+    }
+}
