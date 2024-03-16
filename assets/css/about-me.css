@@ -1,445 +1,341 @@
-/************CONTAINER***************/
-.container{
-    padding: 5px;
-}
+/***************ABOUT-ME********************/
 
-/****************ASIDE*******************/
-
-.aside {
-    grid-area: aside;
-    color: black;
-    text-align: center;
+.about-me {
     border-top: 10px solid black;
-    border-left: 6px solid black;
+    border-right: 6px solid black;
     border-bottom: 10px solid black;
 }
 
-/****************SLIDER-NAV*******************/
-nav .slider-nav{
-    margin: 16px;
+/***************ABOUT-TITLE********************/
+.about-me-content .about-title .slider {
+    background-color: yellow;
+    height: 30px;
+    width: 200px;
+    margin-top: 12px;
 }
 
-/****************SLIDER-NAV IMG*******************/
+.about-me-content .about-title .slider h1 {
+    margin-top: -1.5%;
+    margin-left: 90px;
+    font-size: 1.5rem;
+}
 
-nav .slider-nav img {
-    height: 80px;
-    width: 80px;
-    margin: 25px;
+.about-me-content .about-title p {
+    color: #ccc;
+}
+
+/***************WEB-DESIGNER********************/
+
+.web-designer .web-designer-developer h2 {
+    font-size: 1.5rem;
+}
+
+.web-designer .web-designer-developer p{
+    text-align: justify;
+}
+
+.web-designer .web-designer-developer h3{
+    font-size: 1.5rem;
+}
+.web-designer .web-designer-developer .slider-right {
+    background-color: #fdfcfc;
+    height: 130px;
+    width: 250px;
+    margin-left: 40px;
+    border-radius: 4px;
+    border: 0.1px solid #ccc;
+}
+
+.web-designer .web-designer-developer .slider-right p {
+    text-align: justify;
+    padding: 10px 20px;
+}
+
+.web-designer-developer .items-line {
+    margin-top: -20px;
+}
+
+.web-designer-developer .items-line img {
+    margin-left: -22px;
+    border: 0.1px solid #ccc;
     border-radius: 50%;
+    background-color: #f0eeee;
 }
 
-/****************SLIDER-NAV H1*******************/
-
-nav .slider-nav h1 {
-    text-align: center;
-    margin: -18px;
+.web-designer-developer .items-line p {
+    margin-top: 20px;
+    text-wrap: nowrap;
 }
 
-/****************SLIDER-NAV P*******************/
-
-nav .slider-nav p {
-    color: rgb(166, 169, 170);
-    margin: 20px;
+.web-designer-developer .items-line span {
+    text-transform: uppercase;
+    color: #ccc;
+    font-size: 0.9rem;
 }
 
-/**************NAV UL**************************/
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 40px;
+.web-designer-developer .items-line .defile {
+    margin-top: 32px;
+    margin-left: 44px;
 }
 
-/**************NAV UL LI**************************/
-
-nav ul li {
-    text-decoration: none;
-    margin: 22px 0;
-    padding: 0;
-    display: grid;
-}
-
-/**************NAV UL LI a**************************/
-nav ul li a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: black;
-    background-color: whitesmoke;
-}
-
-/**************NAV UL LI a:hover**************************/
-
-nav ul li a:hover {
-    background-color: gray;
-    color: white;
-    cursor: pointer;
-}
-
-/**************ICONS-SOCIAL i**************************/
-
-.icons-social i {
-    width: 24px;
-    height: 24px;
-    line-height: 25px;
-    margin: 1px;
-    font-size: 0.8rem;
+.web-designer-developer .items-line .defile i {
+    line-height: 20px;
+    padding: 5px;
+    font-size: 1rem;
     border-radius: 4px;
     background-color: #c0bbbb98;
     cursor: pointer;
 }
 
+/******************SERVICES*********************/
 
-/*************ABOUT ME**************/
+.services{
+    margin-top: -3%;
+}
+.services h4 {
+    font-size: 1.5rem;
+}
 
-.about-me{
+.services .services-line .services-line-items img {
+    display: flex;
+    margin: 0 auto;
+}
+
+.services .services-line .services-line-items h5 {
+    text-align: center;
+}
+
+.services .services-line .services-line-items p {
+text-align: center;
+    width: 100%;
+}
+
+/****************CONTAINER-2******************/
+.container-2{
+    margin-top: 20%;
+}
+
+.about-me-suite {
     border-top: 10px solid black;
     border-right: 6px solid black;
     border-bottom: 10px solid black;
 }
 
 
+/**********CONTAINER-SUITE***********/
 
-/*************ABOUT-TITLE**************/
-.about-title{
+.clients{
+    margin-top: -3%;
+}
+.clients h6 {
+    font-size: 1.5rem;
+}
+
+.clients .clients-line .clients-line-items img {
     display: flex;
-    /* gap: 6px; */
+    margin: 0 auto;
 }
 
-/*************ABOUT-TITLE HEADER**************/
+/********FUN FACTS*******/
 
-.about-title header{
-    height: 35px;
-    width: 25%;
-    background-color: yellow;
-    margin-top: 3%;
-}
-
-/*************ABOUT-TITLE HEADER h2**************/
-
-.about-title header h2{
-    margin-top: 1%;
-    margin-left: 46%;
+.fun-facts h6 {
     font-size: 1.5rem;
 }
 
-/*************ABOUT-TITLE HEADER p**************/
-
-.about-title p{
-    margin-top: 4%;
-    margin-left: 2%;
-    color: #ccc;
-}
-
-/*************WEB-DEVELOPER-DESIGNER**************/
-
-.web-developer .web-developer-designer{
-    text-align: justify;
-    width: 60%;
-}
-
-/*************WEB-DEVELOPER-DESIGNER**************/
-
-.web-developer .web-developer-designer h3{
-    font-size: 2rem;
-}
-
-/*************TESTIMONIAL**************/
-
-.testimonial{
-    width: 30%;
-}
-
-/*************TESTIMONIAL h4**************/
-
-.testimonial h4{
-    font-size: 1.5rem;
-}
-
-
-/*************TESTIMONIAL PARAGRAPHE**************/
-
-.testimonial .paragraphe{
-    background-color: #faf9f9db;
-    height: 130px;
-    border: 1px solid #dad8d8;
-    padding: 12px;
-}
-
-/*************TESTIMONIAL PARAGRAPHE P**************/
-
-.testimonial .paragraphe p{
-    margin: 10px;
-}
-
-/*************TESTIMONIAL IMG**************/
-
-.testimonial img{
-    height: 80px;
-    border-radius: 50%;
-    background-color: rgb(221, 228, 228);
-    margin-top: -6%;
-    margin-left: -14%;
-}
-
-/*************TESTIMONIAL P**************/
-
-.testimonial p{
-    margin-top: -20%;
-    margin-left: 22%;
-}
-
-/*************TESTIMONIAL P SPAN**************/
-
-.testimonial p span{
-    color: #ccc;
-    font-size: 0.8rem;
-    margin-left: 4%;
-    font-style: italic;
-}
-
-/*************DEFILE**************/
-.defile {
-    margin-top: -16%;
-    margin-left: 89%;
-    font-size: 1rem;
-}
-
-/*************DEFILE i**************/
-
-.defile i{
-    background-color: #e9e7e7;
-}
-
-/*************SERVICES**************/
-
-.services{
-    margin-top: -30px;
-}
-
-/*************SERVICES h5**************/
-.services h5{
-    font-size: 1.5rem;
-}
-
-/*************SERVICES h5 u**************/
-.services h5 u{
-    text-decoration: none;
-    border-bottom: 2px solid yellow;
-}
-
-/*************SERVICES-LINE**************/
-.services-line{
+.fun-facts-line img {
     display: flex;
-    text-align: center;
-    margin: 4px;
+    margin: 0 auto;
 }
 
-/*************SERVICES-LINE-ITEM IMG**************/
+/***************MEDIA QUERY****************/
 
-.services-line .services-line-item img{
-    height: 50px;
-}
+@media screen and (max-width: 900px) {
 
-/*************SERVICES-LINE-ITEM h6**************/
-.services-line-item h6{
-    font-size: 1.5rem;
-    margin: 6px;
-}
-
-/*************SERVICES-LINE-ITEM P**************/
-.services-line-item p{
-    width: 60%;
-    /* text-align: justify; */
-    margin-left: 25%;
-    text-align: justify;
-}
-
-/*************GENERAL-FRAMEWORK**************/
-.general-framework {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "aside about-me";
-}
-
-
-/*************MEDIA QUERY**************/
-
-@media  screen and (max-width: 901px) {
-    .general-framework{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "aside" "about-me";
-    }
-
-    /*************NAV**************/
-    nav{
-        box-shadow: 0 4px 6px #ccc;
-    }
-
-    nav .slider-nav h1 {
-        text-wrap: nowrap;
-    }
-
-
+    /************SLIDER-NAV*************/
     .aside {
-        border-right: 4px solid black;
+        border-top: 10px solid black;
+        border-right: 6px solid black;
         border-bottom: none;
-    } 
+        box-shadow: 1px 2px 4px #ccc;
+    }
+
+    .slider-nav h1 {
+        padding: 15px;
+        padding-right: 90px;
+    }
 
 
-    .slider img, ul, .slider-nav p, .icons-social i{
+    .slider-nav p {
         display: none;
     }
 
-
+    /**********NAV-BAR***********/
     .navbar::before {
         content: "\2630";
         position: absolute;
-        top: 3%;
-        right: 4%;
+        top: 2%;
+        right: 2%;
+        line-height: 50px;
         font-size: 1.2rem;
         color: black;
         font-weight: bold;
         cursor: pointer;
     }
 
-
-    nav .slider-nav h1{
-       margin-top: -3%;
-       margin-right: 70%;
-    }
-    
-
-    .about-me{
+    /**************ABOUT-CONTENT-TITLE***************/
+    .about-me {
         border-top: none;
-        border-left: 4px solid black;
-    }
- 
-    
-} 
-
-@media screen and (max-width: 650px) {
-    .about-title header{
-        width: 150px;
-        height: 30px;
-        line-height: 1.5;
+        border-left: 6px solid black;
+        border-bottom: 10px solid black;
     }
 
-    .about-title header h2{
-        text-wrap: nowrap;
-        font-size: 1.2rem;
-        margin-left: 55px;
+    .web-designer-developer h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 1.5rem;
     }
 
-
-    .about-title p{
-      display: none;
-    }
-
-
-    .web-developer{
+    .about-title,
+    .web-designer,
+    .services-line {
         display: block;
-        margin: 10px;
     }
 
-
-    .web-developer .web-developer-designer{
-        width: 100%;
-    }
-
-
-    .web-developer .web-developer-designer h3{
-        font-size: 1.2rem;
-    }
-
-
-    .web-developer .web-developer-designer p{
-        margin-top: -3%;
-    }
-
-
-    .testimonial{
-        width: 100%;
-        margin-top: -6%;
-    }
-
-    
-    .testimonial h4{
-        margin-top: 8%;
-        margin-left: -5%;
-        font-size: 1.2rem;
-    }
-
-    
-    .testimonial .paragraphe{
-        width: 80%; 
-        margin: 0 auto;
-        padding: -20px;
-        margin-top: -2%;
-    }
-
-    
-    .testimonial img{
-        margin-left: -15px;
-    }
-
-
-    .testimonial p{
-        margin-top: -12%;
-    }
-
-
-    .testimonial p s{
-        font-size: 1em;
-    }
-
-
-    .defile {
-        margin-top: -10%;
-        margin-left: 86%;
-        font-size: 1rem;
-    }
-
-
-  .services{
-      padding: 10px;
-    }
-
-
-    .services-line{
-        display: block;
-        height: 20px;
-    }
-
-
-    .services-line-item img {
-        margin: -18px;
-    }
-
-
-    .services-line-item:nth-child(2){
+    .about-title p {
         display: none;
     }
-    
 
-    .services-line-item:nth-child(3){
+    .web-designer-developer .slider-right {
+        margin: 0 auto !important;
+    }
+
+
+    .services h4 {
+        font-size: 1.5rem;
+        margin-top: 60px;
+    }
+
+    .services-line-items:nth-child(1) h5,
+    .services-line-items p {
         display: none;
     }
-    
 
-    .services-line-item:nth-child(4){
+    .services-line-items:nth-child(2) {
         display: none;
     }
-    
 
-    .services-line-item h6{ 
+    .services-line-items:nth-child(3) {
         display: none;
     }
-    
 
-    .services-line-item p{ 
+    .services-line-items:nth-child(4) {
+        display: none;
+    }
+
+    .container-suite{
         display: none;
     }
 }
+
+/**************MEDIA QUERY*************/
+
+@media screen and (max-width: 650px) {
+
+    .aside {
+        border-top: 10px solid black;
+        border-right: 6px solid black;
+        border-bottom: none;
+        box-shadow: 1px 2px 4px #ccc;
+    }
+
+    .slider-nav h1 {
+        padding: 8px 8px;
+    }
+
+
+    .slider-nav p {
+        display: none;
+    }
+
+    /**********NAV-BAR***********/
+    .navbar::before {
+        content: "\2630";
+        position: absolute;
+        top: 1.5%;
+        right: 2.5%;
+        line-height: 50px;
+        font-size: 1.2rem;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /**************ABOUT-CONTENT-TITLE***************/
+    .about-me {
+        border-top: none;
+        border-left: 6px solid black;
+        border-bottom: 10px solid black;
+    }
+
+    .web-designer-developer h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .about-me {
+        border-top: none;
+        border-left: 6px solid black;
+        border-bottom: 10px solid black;
+    }
+
+    .web-designer-developer h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .about-title,
+    .web-designer,
+    .services-line {
+        display: block;
+    }
+
+    .about-title p {
+        display: none;
+    }
+
+    .web-designer-developer .items-line {
+        margin-top: -14px;
+    }
+
+    .services h3 {
+        font-size: 1.5rem;
+    }
+
+    .services-line-items:nth-child(1) h5,
+    .services-line-items p {
+        display: none;
+    }
+
+    .services-line-items:nth-child(2) {
+        display: none;
+    }
+
+    .services-line-items:nth-child(3) {
+        display: none;
+    }
+
+    .services-line-items:nth-child(4) {
+        display: none;
+    }
+
+    .container-suite{
+        display: none;
+    }
+
+}
+
