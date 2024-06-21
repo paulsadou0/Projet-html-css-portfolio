@@ -1,0 +1,133 @@
+body{
+  padding: 80px;
+}
+
+/*RESUME*/
+.resume{
+    border-top: 10px solid black;
+    border-right: 6px solid black;
+    border-bottom: 10px solid black;
+}
+
+.resume-line{
+    width: 100%;
+    justify-content: space-between;
+}
+
+  .resume-line .resume-items{
+    padding: 20px;
+  }
+
+  .resume-line .resume-items h1{
+    font-size: 25px;
+  }
+
+  .resume-line .resume-items h2{
+    font-size: 18px;
+    background-color: rgb(17, 197, 17);
+    color: #ffff;
+    text-align: center;
+  }
+  
+  .resume-line .resume-items h3{
+    margin-top: -5%;
+    font-size: 15px;
+    padding-left: 25px;
+  }
+
+  .resume-items .mycv-items{
+    padding-top: 20px;
+  }
+  
+  .resume-items .mycv-items p{
+    margin-top: -8%;
+    color: #ccc;
+    padding-left: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .resume-items .mycv-items .text{
+    padding-left: 25px;
+  }
+
+  .resume-items .mycv-items span{
+    color: black;
+    margin-top: 4%;
+    padding-left: 25px;
+    font-size: 5px;
+  }
+
+   /******SKILLS*****/
+  .mycv-items-1 label{
+    display: flex;
+    margin-top: 10px;
+    }
+  
+    
+    .mycv-items-1 #file{
+    padding: 10px;
+  }
+ 
+  .mycv-items-2 label{
+    display: flex;
+    margin-top: 10px;
+    }
+
+    .mycv-items-2 #file{
+      padding: 10px;
+    }
+  
+  
+
+  button{
+    display: flex;
+    margin: 0 auto;
+    font-size: 18px;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    border: 1px solid yellow;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 900px){
+    .resume{
+      border-top: none;
+        border-left: 6px solid black;
+        border-bottom: 10px solid black;
+    }
+
+    .resume .resume-line{
+      display: block;
+    }
+
+    .resume .mycv-items:nth-child(1){
+      margin-top: -40px;
+    }
+
+    .resume .mycv-items h2{
+      margin-top: -5px;
+    }
+
+    .resume .mycv-items h3{
+      margin-top: 1px;
+      }
+      
+      .resume .mycv-items p{
+      margin-top: -10px;
+    }
+
+    .resume-items .mycv-items-1{
+      display: none;
+    }
+
+    .resume-items .mycv-items-2{
+      display: none;
+    }
+  }
+
+
+

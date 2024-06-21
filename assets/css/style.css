@@ -4,8 +4,8 @@ body {
     padding: 0;
     font-family:'Times New Roman', Times, serif;
     height: 100vh;
+    padding: 10px;
 }
-
 
 /****************ASIDE*******************/
 .aside {
@@ -13,8 +13,10 @@ body {
     color: black;
     text-align: center;
     border-left: 6px solid black;
+    border-right: 6px solid whitesmoke;
     border-top: 10px solid black;
     border-bottom: 10px solid black;
+    background-color: white;
 }
 
 nav .slider-nav{
@@ -31,10 +33,11 @@ nav .slider-nav img {
 nav .slider-nav h1 {
     text-align: center;
     margin: -18px;
+    color: black;
 }
 
 nav .slider-nav p {
-    color: rgb(166, 169, 170);
+    color: #c0bbbb98;
     margin: 25px;
 }
 
@@ -45,23 +48,24 @@ nav ul {
 }
 
 nav ul li {
-    text-decoration: none;
-    margin: 22px 0;
-    padding: 0;
     display: grid;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li:hover{
+    background-color: rgb(208, 207, 207);
+    cursor: pointer;
 }
 
 nav ul li a {
     text-decoration: none;
     font-size: 1.2rem;
     color: black;
-    background-color: whitesmoke;
 }
 
-nav ul li a:hover {
-    background-color: gray;
-    color: white;
-    cursor: pointer;
+nav ul li a:hover{
+    color: black;
 }
 
 .icons-social i {
@@ -78,7 +82,8 @@ nav ul li a:hover {
 /*************HOME**************/
 .home {
     grid-area: home;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/assets/images/002.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.7)), url('/assets/images/002.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -87,7 +92,6 @@ nav ul li a:hover {
     border-bottom: 10px solid black;
     color: white;
 }
-
 
 .home .infos{
     margin-top: 15%;
@@ -98,7 +102,6 @@ nav ul li a:hover {
     font-size: 3rem; 
 }
 
-
 .home .infos h3{
     text-align: center;
     font-size: 1.2rem;
@@ -108,7 +111,6 @@ nav ul li a:hover {
     font-size: 1.3rem;
     margin-left: 35%
 }
-
 
  .home .infos p u{
 text-decoration: none;
@@ -132,25 +134,27 @@ border-bottom: 2px solid yellow;
         grid-template-areas: "aside" "home";
     }
 
-    
     .aside {
         border-top: 10px solid black;
         border-right: 6px solid black;
         border-bottom: none;
+        background-color: #fff;
     } 
+
+    .slider-nav{
+        height: 20px;
+    }
 
     .slider-nav img, ul,
     .icons-social i {
         display: none;
     }
 
-
-
     .navbar::before {
         content: "\2630";
         position: absolute;
         top: 2%;
-        right: 2%;
+        right: 5%;
         font-size: 1.2rem;
         color: black;
         font-weight: bold;
@@ -158,13 +162,16 @@ border-bottom: 2px solid yellow;
     }
 
     nav .slider-nav h1 {
-        margin-left: -77%;
-        line-height: 1.5;
+        margin-left: -80%;
+        line-height: 1;
+        color: black;  
     }
     
     nav .slider-nav p{
+        display: block;
         position: absolute;
-        top: 32%;
+        font-size: 18px;
+        top: 31%;
         left: 0;
         right: 0;
     }
@@ -182,7 +189,6 @@ border-bottom: 2px solid yellow;
         left: 0;
         right: 0;
     }
-
 
      .home .infos h3 {
         display: none;
