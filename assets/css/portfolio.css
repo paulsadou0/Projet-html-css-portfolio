@@ -1,0 +1,115 @@
+
+
+.portfolio {
+    border-top: 10px solid black;
+    border-right: 6px solid black;
+    border-bottom: 10px solid black;
+}
+
+.portfolio-title .slider {
+    background-color: yellow;
+    height: 40px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.portfolio-title .slider h1 {
+    line-height: 10px;
+    font-size: 25px;
+    margin-left: 50%;
+}
+
+.portfolio-title .slider-1 p {
+    color: #ccc;
+    line-height: 50px;
+}
+
+.items-title{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.items-title h2{
+    padding: 4px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.items-title h2:nth-child(1) {
+    background-color: yellow;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+}
+
+.images-content-line .images-items img{
+    height: 200px;
+    width: 200px;
+    border: 4px solid #ccc;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+@media  screen and (max-width: 750px) {
+
+    .aside {
+        border-top: 10px solid black;
+        border-right: 6px solid black;
+        border-left: 6px solid black;
+        border-bottom: none;
+    } 
+
+
+    .slider-nav{
+        height: 20px;
+    }
+
+    .slider-nav img, ul,
+    .icons-social i {
+        display: none;
+    }
+
+    .navbar::before {
+        content: "\2630";
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        font-size: 1.2rem;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    nav .slider-nav h1 {
+        margin-left: -82%;
+        line-height: 1;
+        color: black;  
+    }
+    
+
+    .portfolio{
+        border-left: 6px solid black;
+        border-top: none;
+    }
+
+    .items-title{
+       display: none;
+    }
+
+    .images-content-line .images-items img{
+        height: 280px;
+        width: 280px;
+        display: flex;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    
+
+}
+
+
+

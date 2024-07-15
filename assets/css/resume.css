@@ -36,7 +36,7 @@ body{
   }
 
   .resume-items .mycv-items{
-    padding-top: 20px;
+    
   }
   
   .resume-items .mycv-items p{
@@ -72,12 +72,10 @@ body{
     display: flex;
     margin-top: 10px;
     }
-
+    
     .mycv-items-2 #file{
       padding: 10px;
     }
-  
-  
 
   button{
     display: flex;
@@ -108,8 +106,8 @@ body{
       margin-top: -40px;
     }
 
-    .resume .mycv-items h2{
-      margin-top: -5px;
+    .resume .mycv-items h1{
+      margin-top: 8%;
     }
 
     .resume .mycv-items h3{

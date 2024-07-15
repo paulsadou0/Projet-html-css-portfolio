@@ -1,0 +1,102 @@
+
+
+.contact {
+    border-top: 10px solid black;
+    border-right: 6px solid black;
+    border-bottom: 10px solid black;
+}
+
+.contact-title .slider {
+    background-color: yellow;
+    height: 40px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.contact-title .slider h1 {
+    line-height: 10px;
+    font-size: 25px;
+    margin-left: 50%;
+}
+
+.contact-title .slider-1 p {
+    color: #ccc;
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+
+.contact-line-items{
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact-line-items .get-in-touch{
+    width: 40%;
+    margin-left: 8%;
+}
+.contact-line-items .get-in-touch h1{
+   font-size: 20px;
+}
+.contact-line-items .get-in-touch p{
+    text-align: justify;
+}
+
+form{
+    width: 40%;
+}
+
+.contact-form{
+    padding: 8px;
+}
+.contact-form h1{
+    font-size: 20px;
+}
+
+.contact-form input,textarea{
+    padding: 10px;
+    width: 66%;
+    border: 0.1px solid #ccc;
+    outline: none;
+}
+
+.contact-form input:focus{
+    border: 1px solid #1877f2;
+}
+
+.contact-form textarea:focus{
+    border: 1px solid #1877f2;
+}
+
+.btn{
+    margin-left: 2%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .aside {
+        border-top: 10px solid black;
+        border-right: 6px solid black;
+        border-bottom: none;
+        box-shadow: 1px 2px 4px #ccc;
+    }
+
+    .slider-nav p{
+        display: none !important;
+    }
+
+    .contact {
+        border-top: none;
+        border-left: 6px solid black;
+        border-bottom: 10px solid black;
+    }
+
+}
+
+.infos-line .infos{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
