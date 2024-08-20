@@ -1,131 +1,336 @@
-body{
+body {
   padding: 80px;
 }
 
 /*RESUME*/
-.resume{
-    border-top: 10px solid black;
-    border-right: 6px solid black;
+.resume {
+  border-top: 10px solid black;
+  border-right: 6px solid black;
+  border-bottom: 10px solid black;
+  animation: rotate 2s;
+}
+
+/***************KEYFRAMES******************/
+@keyframes rotate {
+  to {
+    transform: rotate(0deg);
+    margin-left: 0%;
+  }
+
+  from {
+    margin-left: 100%;
+  }
+}
+
+.resume-content .resume-title .slide {
+  background-color: yellow;
+  height: 42px;
+  width: 40px;
+  position: absolute;
+  top: 7.5%;
+  left: 24%;
+  animation: rotate 2s;
+}
+
+.left {
+  transform: rotateY(84deg) rotateZ(-75deg);
+}
+
+.resume-content .resume-title .slider {
+  background-color: yellow;
+  height: 40px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.resume-content .resume-title .slider h1 {
+  font-size: 25px;
+  margin-left: 88px;
+  line-height: 7px;
+  font-weight: bold;
+  color: white;
+}
+
+.resume-content .resume-title p {
+  line-height: 50px;
+  color: #ccc;
+}
+
+.resume-line {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.resume-line .resume-items {
+  padding: 20px;
+}
+
+.resume-line .resume-items h1 {
+  font-size: 25px;
+  margin-left: 16px;
+}
+
+.resume-line .resume-items .mycv-items .cv-line .experience {
+  background-color: rgb(17, 197, 17);
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+.cv {
+  transform: rotateY(-85deg) rotateZ(-80deg);
+}
+
+.resume-line .resume-items .mycv-items .cv-line .header1 {
+  background-color: rgb(17, 197, 17);
+  width: 100px;
+  height: 40px;
+  position: relative;
+  top: -3px;
+  left: -22.5px;
+}
+
+.resume-line .resume-items .mycv-items .header1 h2,
+.resume-line .resume-items .mycv-items .header2 h2 {
+  font-size: 18px;
+  text-align: center;
+  line-height: 8px;
+  font-weight: bold;
+  color: white;
+  text-wrap: nowrap;
+}
+
+.resume-line .resume-items .mycv-items .cv-line .header2 {
+  background-color: rgb(17, 197, 17);
+  width: 150px;
+  height: 40px;
+  position: relative;
+  top: -3px;
+  left: -22.5px;
+}
+
+.resume-line .resume-items h3 {
+  margin-top: 4%;
+  font-size: 15px;
+  padding-left: 25px;
+}
+
+.resume-items .mycv-items p {
+  margin-top: -4%;
+  color: #ccc;
+  padding-left: 25px;
+  margin-bottom: 5px;
+}
+
+.resume-items .mycv-items .text {
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+
+.resume-items .mycv-items span {
+  color: black;
+  margin-top: 8%;
+  padding-left: 25px;
+  font-size: 5px;
+}
+
+.resume-line .resume-items h4 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+/******SKILLS*****/
+.mycv-items-1 .items {
+  padding-bottom: 15px;
+}
+
+.web-design {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid yellow;
+  border-radius: 10px;
+}
+
+.web-design .skills.design {
+  width: 90%;
+  background-color: yellow;
+  height: 8px;
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+}
+
+.graphic-design {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid yellow;
+  border-radius: 10px;
+}
+
+.graphic-design .skills.design {
+  width: 80%;
+  background-color: yellow;
+  height: 8px;
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+}
+
+.print-design {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid yellow;
+  border-radius: 10px;
+}
+
+.print-design .skills.design {
+  width: 65%;
+  background-color: yellow;
+  height: 8px;
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+}
+
+.mycv-items-2 .items {
+  padding-top: 10px;
+}
+
+.html {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid yellow;
+  border-radius: 10px;
+}
+
+.html .skills.html5 {
+  width: 90%;
+  background-color: yellow;
+  height: 8px;
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+}
+
+.css {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid yellow;
+  border-radius: 10px;
+}
+
+.css .skills.css3 {
+  width: 80%;
+  background-color: yellow;
+  height: 8px;
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+}
+
+.jQuery {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid yellow;
+  border-radius: 10px;
+}
+
+.jQuery .skills.js {
+  width: 65%;
+  background-color: yellow;
+  height: 8px;
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+}
+
+.wordPress {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid yellow;
+  border-radius: 10px;
+}
+
+.wordPress .skills.wordPress {
+  width: 45%;
+  background-color: yellow;
+  height: 8px;
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+}
+
+.php {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid yellow;
+  border-radius: 10px;
+}
+
+.php .skills.php {
+  width: 75%;
+  background-color: yellow;
+  height: 8px;
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+}
+
+button {
+  display: flex;
+  margin: 0 auto;
+  font-size: 18px;
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  border: 1px solid yellow;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/***************MEDIA*******************/
+@media screen and (max-width: 900px) {
+  .resume {
+    border-top: none;
+    border-left: 6px solid black;
     border-bottom: 10px solid black;
+    animation: none;
+  }
+
+  .resume-content .resume-title .slide {
+    display: none;
+  }
+
+  .resume-content .resume-title .slider {
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+  }
+
+  .resume-content .resume-title .slider h1 {
+    font-size: 20px;
+    margin-left: 28px;
+    line-height: 12px;
+  }
+
+  .resume-content .resume-title p {
+    display: none;
+  }
+
+  .resume .mycv-items h1 {
+    margin-top: 8%;
+  }
+
+  .resume .mycv-items h3 {
+    margin-top: 1px;
+  }
+
+  .resume .mycv-items p {
+    margin-top: -10px;
+  }
+
+  .resume-items .mycv-items-1 {
+    display: none;
+  }
+
+  .resume-items .mycv-items-2 {
+    display: none;
+  }
 }
-
-.resume-line{
-    width: 100%;
-    justify-content: space-between;
-}
-
-  .resume-line .resume-items{
-    padding: 20px;
-  }
-
-  .resume-line .resume-items h1{
-    font-size: 25px;
-  }
-
-  .resume-line .resume-items h2{
-    font-size: 18px;
-    background-color: rgb(17, 197, 17);
-    color: #ffff;
-    text-align: center;
-  }
-  
-  .resume-line .resume-items h3{
-    margin-top: -5%;
-    font-size: 15px;
-    padding-left: 25px;
-  }
-
-  .resume-items .mycv-items{
-    
-  }
-  
-  .resume-items .mycv-items p{
-    margin-top: -8%;
-    color: #ccc;
-    padding-left: 25px;
-    margin-bottom: 5px;
-  }
-  
-  .resume-items .mycv-items .text{
-    padding-left: 25px;
-  }
-
-  .resume-items .mycv-items span{
-    color: black;
-    margin-top: 4%;
-    padding-left: 25px;
-    font-size: 5px;
-  }
-
-   /******SKILLS*****/
-  .mycv-items-1 label{
-    display: flex;
-    margin-top: 10px;
-    }
-  
-    
-    .mycv-items-1 #file{
-    padding: 10px;
-  }
- 
-  .mycv-items-2 label{
-    display: flex;
-    margin-top: 10px;
-    }
-    
-    .mycv-items-2 #file{
-      padding: 10px;
-    }
-
-  button{
-    display: flex;
-    margin: 0 auto;
-    font-size: 18px;
-    background-color: #fff;
-    color: black;
-    padding: 10px;
-    border: 1px solid yellow;
-    outline: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  @media screen and (max-width: 900px){
-    .resume{
-      border-top: none;
-        border-left: 6px solid black;
-        border-bottom: 10px solid black;
-    }
-
-    .resume .resume-line{
-      display: block;
-    }
-
-    .resume .mycv-items:nth-child(1){
-      margin-top: -40px;
-    }
-
-    .resume .mycv-items h1{
-      margin-top: 8%;
-    }
-
-    .resume .mycv-items h3{
-      margin-top: 1px;
-      }
-      
-      .resume .mycv-items p{
-      margin-top: -10px;
-    }
-
-    .resume-items .mycv-items-1{
-      display: none;
-    }
-
-    .resume-items .mycv-items-2{
-      display: none;
-    }
-  }
-
-
-

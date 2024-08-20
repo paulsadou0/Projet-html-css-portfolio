@@ -1,9 +1,33 @@
-
-
 .contact {
     border-top: 10px solid black;
     border-right: 6px solid black;
     border-bottom: 10px solid black;
+    animation: rotate 2s;
+}
+
+/**********KEYFRAMES***********/
+@keyframes rotate {
+    to {
+        margin-left: 0%;
+    }
+
+    from {
+        margin-left: 100%;
+    }
+}
+
+.contact-content .contact-title .slide {
+    background-color: yellow;
+    height: 42px;
+    width: 40px;
+    position: absolute;
+    top: 7.5%;
+    left: 24%;
+    animation: rotate 2s;
+}
+
+.left {
+    transform: rotateY(84deg) rotateZ(-75deg);
 }
 
 .contact-title .slider {
@@ -14,9 +38,11 @@
 }
 
 .contact-title .slider h1 {
-    line-height: 10px;
     font-size: 25px;
     margin-left: 50%;
+    line-height: 7px;
+    font-weight: bold;
+    color: white;
 }
 
 .contact-title .slider-1 p {
@@ -25,55 +51,78 @@
     padding-left: 10px;
 }
 
+.infos-line .infos {
+    display: flex;
+    align-items: center;
+    margin-left: -2%;
+}
 
-.contact-line-items{
+.infos-line .infos i {
+    padding: 0 10px;
+
+}
+
+.contact-line-items {
     justify-content: space-between;
     padding: 20px;
 }
 
-.contact-line-items .get-in-touch{
+.contact-line-items .get-in-touch {
     width: 40%;
-    margin-left: 8%;
-}
-.contact-line-items .get-in-touch h1{
-   font-size: 20px;
-}
-.contact-line-items .get-in-touch p{
-    text-align: justify;
+    justify-content: center;
 }
 
-form{
-    width: 40%;
-}
-
-.contact-form{
-    padding: 8px;
-}
-.contact-form h1{
+.contact-line-items .get-in-touch h1 {
     font-size: 20px;
 }
 
-.contact-form input,textarea{
+.contact-line-items .get-in-touch p {
+    text-align: justify;
+}
+
+/*************FORM**************/
+.form {
+    width: 60%;
+    position: relative;
+    left: 10%;
+}
+
+.contact-form {
+    padding: 8px;
+}
+
+.contact-form h1 {
+    font-size: 20px;
+}
+
+.contact-form input,
+textarea {
     padding: 10px;
     width: 66%;
     border: 0.1px solid #ccc;
     outline: none;
 }
 
-.contact-form input:focus{
+.recaptcha {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.contact-form input:focus {
     border: 1px solid #1877f2;
 }
 
-.contact-form textarea:focus{
+.contact-form textarea:focus {
     border: 1px solid #1877f2;
 }
 
-.btn{
+.btn {
     margin-left: 2%;
-    margin-top: 2%;
     cursor: pointer;
 }
 
+/**************MEDIA*************/
 @media screen and (max-width: 900px) {
     .aside {
         border-top: 10px solid black;
@@ -82,7 +131,7 @@ form{
         box-shadow: 1px 2px 4px #ccc;
     }
 
-    .slider-nav p{
+    .slider-nav p {
         display: none !important;
     }
 
@@ -90,13 +139,39 @@ form{
         border-top: none;
         border-left: 6px solid black;
         border-bottom: 10px solid black;
+        animation: none;
     }
 
-}
+    .contact-content .contact-title .slide {
+        display: none;
+    }
 
-.infos-line .infos{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+    .contact-title .slider {
+        height: 40px;
+        width: 120px;
+        margin-top: 20px;
+    }
 
+    .contact-title .slider h1 {
+        font-size: 20px;
+        margin-left: 28px;
+        line-height: 12px;
+    }
+
+    .contact-title .slider-1 p {
+        display: none;
+    }
+
+    .contact-line-items .get-in-touch {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .form {
+        margin-left: -12%;
+    }
+
+    .contact-content .contact-line-items {
+        display: block;
+    }
+}

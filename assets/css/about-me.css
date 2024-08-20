@@ -1,29 +1,60 @@
+
+
 /***************ABOUT-ME********************/
 .about-me {
     border-top: 10px solid black;
     border-right: 6px solid black;
     border-bottom: 10px solid black;
+    animation: rotate 2s;
+    display: flex;
+}
+
+/***************ANIMATION********************/
+@keyframes rotate {
+    to {
+        transform: rotate(0deg);
+        margin-left: 0%;
+    }
+
+    from {
+        margin-left: 100%;
+    }
 }
 
 /***************ABOUT-TITLE********************/
+.about-me-content .about-title .slide {
+    background-color: yellow;
+    height: 42px;
+    width: 40px;
+    position: absolute;
+    top: 7.5%;
+    left: 24%;
+    animation: rotate 2s;
+}
+
+.left {
+    transform: rotateY(84deg) rotateZ(-75deg);
+}
+
 .about-me-content .about-title .slider {
     background-color: yellow;
     height: 40px;
     width: 200px;
-    margin-top: 8px;
-    margin-left: 10px;
-    line-height: 50px;
+    margin-top: 20px;
 }
 
 .about-me-content .about-title .slider h1 {
     margin-top: -1.5%;
-    margin-left: 90px;
+    margin-left: 85px;
     font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    line-height: 45px;
 }
 
 .about-me-content .about-title p {
     color: #ccc;
-    line-height: 1.5;
+    line-height: 50px;
 }
 
 /***************WEB-DESIGNER********************/
@@ -31,13 +62,14 @@
     font-size: 1.5rem;
 }
 
-.web-designer .web-designer-developer p{
+.web-designer .web-designer-developer p {
     text-align: justify;
 }
 
-.web-designer .web-designer-developer h3{
+.web-designer .web-designer-developer h3 {
     font-size: 1.5rem;
 }
+
 .web-designer .web-designer-developer .slider-right {
     background-color: #fdfcfc;
     height: 130px;
@@ -65,13 +97,14 @@
 
 .web-designer-developer .items-line p {
     margin-top: 20px;
-    /* text-wrap: nowrap; */
+    text-wrap: nowrap;
 }
 
 .web-designer-developer .items-line span {
     text-transform: uppercase;
     color: #ccc;
     font-size: 0.9rem;
+    font-style: italic;
 }
 
 .web-designer-developer .items-line .defile {
@@ -81,7 +114,7 @@
 
 .web-designer-developer .items-line .defile i {
     line-height: 20px;
-    padding: 5px;
+    padding: 4px;
     font-size: 1rem;
     border-radius: 4px;
     background-color: #c0bbbb98;
@@ -90,9 +123,10 @@
 
 /******************SERVICES*********************/
 
-.services{
+.services {
     margin-top: -3%;
 }
+
 .services h4 {
     font-size: 1.5rem;
 }
@@ -104,103 +138,6 @@
 
 .services-line-1 .services-line-item-1 h5 {
     text-align: center;
-}
-
-/****************CONTAINER-2******************/
-.container-2{
-    margin-top: 10%;
-}
-
-.about-me-suite {
-    border-top: 10px solid black;
-    border-right: 6px solid black;
-    border-bottom: 10px solid black;
-}
-
-/**********CONTAINER-SUITE***********/
-
-.services-line-2 .services-line-item-2 img {
-    display: flex;
-    margin: auto;
-}
-
-.services-line-2 .services-line-item-2 h5 {
-    text-align: center;
-}
-
-.clients h6 {
-    font-size: 1.5rem;
-    margin-top: -1%;
-}
-
-.clients .clients-line .clients-line-item img {
-    display: flex;
-    margin: -35px auto;
-   
-}
-
-/********FUN FACTS*******/
-
-.fun-facts h6 {
-    font-size: 1.5rem;
-    margin-top: 5%;
-}
-
-.fun-facts-line{
-    padding: 20px 30px;
-    margin-top: -5%;
-}
-
-.fun-facts-line .fun-facts-line-item{
-    height: 100px;
-    padding: 10px;
-    font-size: 15px;
-}
-
-.fun-facts-line .fun-facts-line-item img{
-    display: flex;
-    margin: -35px auto;   
-}
-
-.fun-facts-line .fun-facts-line-item p{
-    text-align: center;     
-    margin: 50px 0px;
-}
-
-.fun-facts-line .fun-facts-line-item p:nth-child(3){
-    text-align: center;
-    margin-top: -35px;
-    color: yellow;
-    font-size: 25px;
-    font-weight: bold;   
-}
-
-.fun-facts-line .fun-facts-line-item:nth-child(1){
-    padding-top: 40px;
-    margin: 0px 20px;
-    background-color:hsl(0, 8%, 97%);
-    box-shadow: 0px 1px 4px #ccc;
-}
-
-.fun-facts-line .fun-facts-line-item:nth-child(2){
-    padding-top: 40px;
-    margin: 0px 20px;
-    background-color:hsl(0, 100%, 100%);
-    box-shadow: 0px 1px 4px #ccc;
-}
-
-.fun-facts-line .fun-facts-line-item:nth-child(3){
-    padding-top: 40px;
-    margin: 0px 20px;
-    background-color:hsl(0, 8%, 97%);
-    box-shadow: 0px 1px 4px #ccc;
-}
-
-.fun-facts-line .fun-facts-line-item:nth-child(4){
-    padding-top: 40px;
-    margin: 0px 20px;
-    background-color:hsl(0, 100%, 100%);
-    box-shadow: 0px 1px 4px #ccc;
 }
 
 /***************MEDIA QUERY****************/
@@ -220,7 +157,7 @@
         padding-right: 90px;
     }
 
-    .slider-nav p span{
+    .slider-nav p span {
         display: none;
     }
 
@@ -242,6 +179,7 @@
         border-top: none;
         border-left: 6px solid black;
         border-bottom: 10px solid black;
+        animation: none;
     }
 
     .web-designer-developer h1,
@@ -249,6 +187,27 @@
     h3,
     h4 {
         font-size: 1.5rem;
+    }
+
+    .about-me-content .about-title .slide {
+        display: none;
+    }
+
+    .about-me-content .about-title .slider {
+        height: 40px;
+        width: 120px;
+        margin-top: 20px;
+        text-wrap: nowrap;
+    }
+
+    .about-me-content .about-title .slider h1 {
+        font-size: 20px;
+        margin-left: 25px;
+        line-height: 40px;
+    }
+
+    .about-me-content .about-title p {
+        display: none;
     }
 
     .about-title,
@@ -287,7 +246,7 @@
         display: none;
     }
 
-    .container-suite{
+    .container-suite {
         display: none;
     }
 }
@@ -362,7 +321,7 @@
     .services h3 {
         font-size: 1.5rem;
     }
-    
+
     .services-line-1 .services-line-item-1:nth-child(1) h5,
     .services-line-items p {
         display: none;
@@ -371,6 +330,7 @@
     .services-line-item-1:nth-child(1) {
         margin: 0 auto;
     }
+
     .services-line-item-1:nth-child(2) {
         display: none;
     }
@@ -382,12 +342,12 @@
     .services-line-item-1:nth-child(4) {
         display: none;
     }
-    
+
     .services-line-item-1 p {
-       display: none;
+        display: none;
     }
 
-    .container-suite{
+    .container-suite {
         display: none;
     }
 
@@ -416,9 +376,8 @@
         border-bottom: 10px solid black;
     }
 
-    .container-suite{
+    .container-suite {
         display: none;
     }
-  
-}
 
+}

@@ -1,9 +1,37 @@
 
 
+/***************PORTFOLIO*****************/
 .portfolio {
     border-top: 10px solid black;
     border-right: 6px solid black;
     border-bottom: 10px solid black;
+    animation: rotate 2s;
+}
+
+/***************KEYFRAMES*****************/
+@keyframes rotate {
+    to {
+        transform: rotate(0deg);
+        margin-left: 0%;
+    }
+
+    from {
+        margin-left: 100%;
+    }
+}
+
+.portfolio-content .portfolio-title .slide {
+    background-color: yellow;
+    height: 42px;
+    width: 40px;
+    position: absolute;
+    top: 7.5%;
+    left: 24%;
+    animation: rotate 2s;
+}
+
+.left {
+    transform: rotateY(84deg) rotateZ(-75deg);
 }
 
 .portfolio-title .slider {
@@ -14,9 +42,11 @@
 }
 
 .portfolio-title .slider h1 {
-    line-height: 10px;
     font-size: 25px;
-    margin-left: 50%;
+    margin-left: 88px;
+    color: white;
+    line-height: 10px;
+    font-weight: bold;
 }
 
 .portfolio-title .slider-1 p {
@@ -24,13 +54,13 @@
     line-height: 50px;
 }
 
-.items-title{
+.items-title {
     display: flex;
     justify-content: center;
     font-size: 14px;
 }
 
-.items-title h2{
+.items-title h2 {
     padding: 4px;
     color: #ccc;
     cursor: pointer;
@@ -40,12 +70,12 @@
     background-color: yellow;
 }
 
-.images{
+.images {
     display: flex;
     justify-content: center;
 }
 
-.images-content-line .images-items img{
+.images-content-line .images-items img {
     height: 200px;
     width: 200px;
     border: 4px solid #ccc;
@@ -53,22 +83,22 @@
     margin: 0 auto;
 }
 
-
-@media  screen and (max-width: 750px) {
+/****************MEDIA***************/
+@media screen and (max-width: 750px) {
 
     .aside {
         border-top: 10px solid black;
         border-right: 6px solid black;
         border-left: 6px solid black;
         border-bottom: none;
-    } 
+    }
 
-
-    .slider-nav{
+    .slider-nav {
         height: 20px;
     }
 
-    .slider-nav img, ul,
+    .slider-nav img,
+    ul,
     .icons-social i {
         display: none;
     }
@@ -87,29 +117,44 @@
     nav .slider-nav h1 {
         margin-left: -82%;
         line-height: 1;
-        color: black;  
+        color: black;
     }
-    
 
-    .portfolio{
+    .portfolio {
         border-left: 6px solid black;
         border-top: none;
+        animation: none;
     }
 
-    .items-title{
-       display: none;
+    .portfolio-content .portfolio-title .slide {
+        display: none;
     }
 
-    .images-content-line .images-items img{
+    .portfolio-title .slider {
+        height: 40px;
+        width: 120px;
+        margin-top: 20px;
+    }
+
+    .portfolio-title .slider h1 {
+        font-size: 20px;
+        margin-left: 28px;
+        line-height: 12px;
+    }
+
+    .portfolio-title .slider-1 p {
+        display: none;
+    }
+
+    .portfolio-title .items-title {
+        display: none;
+    }
+
+    .images-content-line .images-items img {
         height: 280px;
         width: 280px;
         display: flex;
         object-fit: cover;
         margin: 0 auto;
     }
-    
-
 }
-
-
-
